@@ -1,1 +1,14 @@
-<h1>Hello from angular</h1>
+<div>
+
+  <app-add-todo (addTodoEvent)="addTodo($event)">
+  
+  </app-add-todo>
+
+  <app-todos [todos]="todos">
+
+  </app-todos>
+
+
+</div>
+
+

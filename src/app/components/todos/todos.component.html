@@ -1,1 +1,9 @@
-<p>todos works!</p>
+<div class="todo">
+    <h3>Hello from todo</h3>
+  
+    <ul>
+      <li *ngFor="let todo of todos; index as i">{{ todo.text }}
+        <button (click)="deleteTodo(i)">x</button>
+      </li>
+    </ul>
+  </div>

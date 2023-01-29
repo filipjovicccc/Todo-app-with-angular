@@ -1,1 +1,9 @@
-<p>add-todo works!</p>
+<div class="todo">
+    <h3>Hello from add-todo</h3>
+  
+    <form class="form" (ngSubmit)="addTodo()">
+      <input [(ngModel)]="todoText" name="todoText" type="text" placeholder="Enter new todo" />
+  
+      <button type="submit">Add Todo</button>
+    </form>
+  </div>

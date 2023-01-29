@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-todos',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent {
+  @Input() todos: {text: string}[] = []
 
+  deleteTodo(index: number){
+      this.todos.splice(index, 1)
+  }
 }
